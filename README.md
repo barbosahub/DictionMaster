@@ -62,7 +62,7 @@ https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 
 ## Record
 
-![App Record](https://drive.google.com/file/d/1_2ukTMOel4BqU6EWeFMCxTX8xzyKj_OK/view?usp=sharing)
+- https://drive.google.com/file/d/1_2ukTMOel4BqU6EWeFMCxTX8xzyKj_OK/view?usp=sharing
 
 
 ## 🚀 LinkedIn
