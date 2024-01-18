@@ -5,8 +5,10 @@
     <string name="definition">Definition</string>
     <string name="update">Update</string>
     <string name="splash">Splash</string>
+    <string name="purchase">Purchase</string>
     <string name="search">Search</string>
     <string name="new_search">New Search</string>
+    <string name="subscribe">Subscribe</string>
     <string name="type_a_word">Type a word…</string>
     <string name="try_another_search_now">Try another search now!</string>
     <string name="that_s_it">That\'s it for %s !</string>

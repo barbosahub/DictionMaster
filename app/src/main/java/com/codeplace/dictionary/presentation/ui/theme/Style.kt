@@ -64,6 +64,21 @@ val fontTitle24 = TextStyle(
     color = Black
 )
 
+val fontTitle20 = TextStyle(
+    fontFamily = fontFamily,
+    fontWeight = FontWeight.Bold,
+    fontSize = 20.sp,
+    color = Black
+)
+
+val fontTitle16 = TextStyle(
+    fontFamily = fontFamily,
+    fontWeight = FontWeight.Bold,
+    fontSize = 20.sp,
+    color = Black
+)
+
+
 val fontSubTitle = TextStyle(
     fontFamily = fontFamily,
     fontWeight = FontWeight.Bold,
@@ -77,6 +92,7 @@ val fontBody = TextStyle(
     fontSize = 16.sp,
     color = Black
 )
+
 
 
 

@@ -70,6 +70,7 @@ fun DefinitionScreen(
     definition: Definition,
     navController: NavController
 ) {
+
     Column(
         modifier = Modifier
             .navigationBarsPadding()
@@ -78,19 +79,25 @@ fun DefinitionScreen(
 
     ) {
 
+
         Column(
             modifier = Modifier
                 .padding(top = 37.dp, start = 30.dp, end = 30.dp)
-
         ) {
             HeaderDefinitionScreen(definition)
         }
 
-        Column(modifier = Modifier.padding(horizontal = 30.dp)) {
+        Column(
+            modifier = Modifier
+                .padding(horizontal = 30.dp)
+        ) {
             BodyDefinitionScreen(definition)
         }
 
-        Column(modifier = Modifier.padding(vertical = 30.dp)) {
+        Column(
+            modifier = Modifier
+                .padding(vertical = 30.dp)
+        ) {
             Divider(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -99,9 +106,11 @@ fun DefinitionScreen(
             )
         }
 
-        Column(modifier = Modifier.padding(horizontal = 30.dp)) {
+        Column(
+            modifier = Modifier
+                .padding(horizontal = 30.dp)
+        ) {
             FooterDefinitionScreen(navController, definition)
         }
-
     }
 }

@@ -23,4 +23,9 @@ sealed class Screen(
         R.string.definition
     )
 
+    data object Purchase : Screen(
+        "purchase_screen",
+        R.string.purchase
+    )
+
 }

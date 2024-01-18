@@ -5,13 +5,11 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 
 private val LightColorScheme = lightColorScheme(
-
     background = White,
     onBackground = Black,
     primary = Gray,
     surface = White,
     onSurface = NavyBlue
-
 )
 
 @Composable

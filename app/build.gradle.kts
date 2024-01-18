@@ -4,6 +4,7 @@ plugins {
     // Hilt
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    kotlin("plugin.serialization") version "1.8.10"
 
 }
 
@@ -100,6 +101,11 @@ dependencies {
     // DataStore
     implementation("androidx.datastore:datastore-preferences:1.0.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+    // Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("com.squareup:kotlinpoet:1.14.2")
+    // ConstraintLayout
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 }
 
 kapt {

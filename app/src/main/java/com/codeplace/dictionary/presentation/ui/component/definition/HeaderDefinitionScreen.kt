@@ -76,7 +76,6 @@ fun HeaderDefinitionScreen(
         }
     }
 
-
     Column {
         Text(
             style = fontTitle,
@@ -100,7 +99,7 @@ fun HeaderDefinitionScreen(
                     contentDescription = null,
                     modifier = Modifier
                         .clickable {
-                           context.playAudio(firstMp3File)
+                            context.playAudio(firstMp3File)
                         }
                         .width(46.dp)
                         .height(46.dp)
@@ -111,15 +110,17 @@ fun HeaderDefinitionScreen(
 
             Spacer(modifier = Modifier.width(7.dp))
 
-            Text(
-                style = fontSubTitle,
-                text = definition.phonetic,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .align(Alignment.CenterVertically)
-                    .alpha(0.4f)
-                    .padding(horizontal = 11.dp)
-            )
+            if (definition.phonetic?.isNotEmpty() == true) {
+                Text(
+                    style = fontSubTitle,
+                    text = definition.phonetic!!,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .align(Alignment.CenterVertically)
+                        .alpha(0.4f)
+                        .padding(horizontal = 11.dp)
+                )
+            }
         }
     }
 }

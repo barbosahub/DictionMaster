@@ -5,21 +5,26 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.codeplace.dictionary.R
+import com.codeplace.dictionary.data.datastore.DataStoreManager
 import com.codeplace.dictionary.domain.model.Definition
 import com.codeplace.dictionary.domain.model.Definitions
 import com.codeplace.dictionary.domain.model.Meanings
 import com.codeplace.dictionary.domain.model.Phonetics
+import com.codeplace.dictionary.presentation.main.activity.MainActivity.Companion.word
 import com.codeplace.dictionary.presentation.ui.component.StandardButton
 import com.codeplace.dictionary.presentation.ui.theme.fontLight16
 import com.codeplace.dictionary.presentation.ui.theme.fontTitle24
 import com.codeplace.dictionary.presentation.util.Screen
+import kotlinx.coroutines.launch
 
 
 @Preview(name = "footerDefinitionScreen", showBackground = true)
@@ -63,7 +68,6 @@ fun FooterDefinitionScreen(
     navController: NavController,
     definition: Definition
 ) {
-
     Column {
 
         Text(
@@ -80,8 +84,8 @@ fun FooterDefinitionScreen(
         )
 
         StandardButton(text = stringResource(id = R.string.new_search)) {
+            word = ""
             navController.navigate(Screen.Home.route)
         }
     }
-
 }

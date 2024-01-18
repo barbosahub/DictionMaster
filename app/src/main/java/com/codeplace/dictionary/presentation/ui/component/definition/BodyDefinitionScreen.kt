@@ -40,14 +40,6 @@ private fun StandardButtonPreview() {
                         Definitions(
                             definition = stringResource(id = R.string.definition_text),
                             example = stringResource(id = R.string.definition_example)
-                        ),
-                        Definitions(
-                            definition = stringResource(id = R.string.definition_text),
-                            example = stringResource(id = R.string.definition_example)
-                        ),
-                        Definitions(
-                            definition = stringResource(id = R.string.definition_text),
-                            example = stringResource(id = R.string.definition_example)
                         )
                     )
                 )
@@ -80,7 +72,7 @@ fun BodyDefinitionScreen(
                 .padding(top = 30.dp)
         )
 
-        if (meaning.example != null) {
+        if (meaning.example?.isNotEmpty() == true) {
             Text(
                 style = fontLight16,
                 text = "• ${meaning.example}",

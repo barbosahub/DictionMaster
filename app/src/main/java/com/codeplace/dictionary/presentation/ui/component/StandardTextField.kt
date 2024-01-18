@@ -19,7 +19,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.focus.FocusManager
@@ -37,7 +36,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnrememberedMutableState")
-@OptIn(ExperimentalComposeUiApi::class, ExperimentalFoundationApi::class)
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun StandardTextField(
     focusManager: FocusManager,
@@ -47,8 +46,6 @@ fun StandardTextField(
 ) {
     var text by remember { mutableStateOf("") }
     val isTextFieldEmpty by derivedStateOf { text.isEmpty() }
-//    val inputService = LocalTextInputService.current
-//    val keyboardController = LocalSoftwareKeyboardController.current
 
     Box(
         modifier = Modifier
@@ -99,9 +96,6 @@ fun StandardTextField(
                     .background(Color.Transparent)
                     .align(Alignment.Center)
                     .alpha(0.5f)
-//                    .onGloballyPositioned {
-//                        focusManager.clearFocus()
-//                    }
             )
         }
     }
