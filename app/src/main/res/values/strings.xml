@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="home">Home</string>
+    <string name="definition">Definition</string>
+    <string name="update">Update</string>
+    <string name="splash">Splash</string>
+    <string name="search">Search</string>
+    <string name="new_search">New Search</string>
+    <string name="type_a_word">Type a word…</string>
+    <string name="try_another_search_now">Try another search now!</string>
+    <string name="that_s_it">That\'s it for %s !</string>
+
+
+    <string name="title">Education</string>
+    <string name="subTitle">/ˌedʒuˈkeɪʃn/</string>
+    <string name="definition_text">The process of imparting knowledge, skill and judgment.</string>
+    <string name="definition_example">2016–06–17 AROP JOSEPH \"Education is the slight hammer that breaks the yoke of ignorance, and moulds knowledge, skills, ideas, good moral values in a person be it a child, a youth or full grown adult. no matter a persons age learning never stops\"</string>
+    <string name="description">[description]</string>
+</resources>
